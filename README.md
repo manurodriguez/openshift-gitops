@@ -27,7 +27,7 @@ oc get secret openshift-gitops-cluster -n openshift-gitops -o jsonpath='{.data.a
 - It also sets quotas, rolebindings, and any initial resource for the projects
 
 ```bash
-oc apply -k https://github.com/manurodriguez/openshift-gitops/environment/openshift-gitops                                                                       
+oc apply -k https://github.com/manurodriguez/openshift-gitops/environment/openshift-gitops 
 ```
 
 ## Once the environments-definitions App is ready, create the argocd-for-developers App
