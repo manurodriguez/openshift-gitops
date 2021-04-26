@@ -18,11 +18,7 @@ spec:
   clusterResourceWhitelist:
   - group: ''
     kind: Namespace
-  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  # Allow all namespaced-scoped resources to be created, except for NetworkPolicy
   namespaceResourceBlacklist:
-  - group: ''
-    kind: ResourceQuota
-  - group: ''
-    kind: LimitRange
   - group: ''
     kind: NetworkPolicy
