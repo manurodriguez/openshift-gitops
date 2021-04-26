@@ -14,14 +14,10 @@ spec:
   destinations:
   - namespace: '*'
     server: https://kubernetes.default.svc
-  # Deny all cluster-scoped resources from being created, except for Namespace, ClusterRole, and ClusterRoleBinding
+  # Allow creation of all cluster-scoped resources
   clusterResourceWhitelist:
-  - group: ''
-    kind: Namespace
-  - group: ''
-    kind: ClusterRole
-  - group: ''
-    kind: ClusterRoleBinding
+  - group: '*'
+    kind: '*'
   # Allow all namespaced-scoped resources to be created, except for NetworkPolicy
   namespaceResourceBlacklist:
   - group: ''
