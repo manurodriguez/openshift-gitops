@@ -8,7 +8,7 @@ spec:
     server: https://kubernetes.default.svc
   project: env-app-project
   source:
-    path: overlays/environment
+    path: overlays/environment/openshift-gitops
     repoURL: https://github.com/manurodriguez/openshift-gitops.git
     targetRevision: main
   syncPolicy:
