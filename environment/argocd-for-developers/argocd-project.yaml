@@ -1,0 +1,21 @@
+kind: AppProject
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: argocd-developers
+spec:
+  # Deny all cluster-scoped resources from being created
+  clusterResourceWhitelist: []
+  destinations:
+    - namespace: '*'
+      server: '*'
+  namespaceResourceBlacklist:
+  - group: ''
+    kind: NetworkPolicy
+  - group: ''
+    kind: ResourceQuota
+  - group: ''
+    kind: LimitRange
+  orphanedResources:
+    warn: false
+  sourceRepos:
+    - '*'
