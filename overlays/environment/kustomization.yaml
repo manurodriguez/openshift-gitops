@@ -4,4 +4,3 @@ kind: Kustomization
 bases:
   - openshift-gitops
   - argocd-for-developers
-  - apacheweb-project
