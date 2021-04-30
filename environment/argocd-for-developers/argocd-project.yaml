@@ -4,17 +4,12 @@ metadata:
   name: argocd-developers
 spec:
   # Deny all cluster-scoped resources from being created
-  clusterResourceWhitelist: []
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
   destinations:
     - namespace: '*'
       server: '*'
-  namespaceResourceBlacklist:
-  - group: ''
-    kind: NetworkPolicy
-  - group: ''
-    kind: ResourceQuota
-  - group: ''
-    kind: LimitRange
   orphanedResources:
     warn: false
   sourceRepos:
