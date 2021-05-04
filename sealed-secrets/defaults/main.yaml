@@ -1,4 +1,0 @@
-sealed_secrets_version: v0.15.0
-sealed_secrets_binary_path: "/usr/local/bin/kubeseal"
-sealed_secrets_kubeseal_downloadurl: https://github.com/bitnami-labs/sealed-secrets/releases/download/{{ sealed_secrets_version }}/kubeseal-linux-amd64
-sealed_secrets_image: quay.io/bitnami/sealed-secrets-controller@sha256:8e9a37bb2e1a6f3a8bee949e3af0e9dab0d7dca618f1a63048dc541b5d554985
