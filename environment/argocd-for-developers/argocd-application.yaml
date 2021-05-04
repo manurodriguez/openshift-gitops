@@ -10,7 +10,7 @@ spec:
   source:
     path: overlays/argocd-for-developers
     repoURL: https://github.com/manurodriguez/openshift-gitops.git
-    targetRevision: main
+    targetRevision: poc
   syncPolicy:
     automated:
       prune: false

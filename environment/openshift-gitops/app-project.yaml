@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  description: Example Project
+  description: Definitions for other projects
   # Allow manifests to deploy from any Git repos
   sourceRepos:
   - '*'
@@ -18,7 +18,3 @@ spec:
   clusterResourceWhitelist:
   - group: '*'
     kind: '*'
-  # Allow all namespaced-scoped resources to be created, except for NetworkPolicy
-  namespaceResourceBlacklist:
-  - group: ''
-    kind: NetworkPolicy

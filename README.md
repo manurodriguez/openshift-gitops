@@ -1,6 +1,10 @@
 # openshift-gitops
 Repo to install and configure openshift-gitops on OCP 4.7
 
+## Clone this repo and select branch
+```bash
+git clone https://github.com/manurodriguez/openshift-gitops -b poc
+```
 
 ## Authenticate with cluster admin creds
 
@@ -11,7 +15,6 @@ oc login -u cluster-admin-user https://your-api:6443
 ## Install operator
 
 ```bash
-oc replace -f install-operator/gitops-op.yaml
 oc apply -f install-operator/gitops-sb.yaml
 ```
 
