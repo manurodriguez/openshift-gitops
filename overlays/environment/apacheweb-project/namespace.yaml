@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: apache-ns - DEV
+    openshift.io/display-name: apache-ns - DEV
+  labels:
+    Security=ABCD
+    Organization=XYZ
+    Application=APP1
+  name: apache-ns
